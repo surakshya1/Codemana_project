@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add a gray background color with some padding */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 2em 9em 2em 9em;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 70%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 30%;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #3A3A3A;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Add a card effect for articles */
+        /* .card {
+            padding: 20px;
+            margin-top: 20px;
+        } */
+
+        .second_card {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .third_card {
+            background-color: #f2f2f2;
+            padding-bottom: 1rem;
+        }
+
+        .third_card .category {
+            margin-bottom: 1rem;
+        }
+
+        .third_card p {
+            padding-left: 1rem;
+            color: #707070;
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .third_card a {
+            padding-left: 1rem;
+            color: #707070;
+            font-size: 18px;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .third_card span {
+            padding-left: 1rem;
+            color: #1E1E2A;
+            font-size: 20px;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            font-weight: 500;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .buttons {
+            margin-top: 2rem;
+        }
+
+        .button {
+            background-color: #A5452C;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            display: flex;
+        }
+
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <img src="Building.jpg" alt="Italian Trulli" style="height:400px; width: 100%; object-fit: cover;">
+                    <p style="line-height: 30px; color: #707070; font-size: 18px;font-weight: 500;">
+                        Sunt in culpa qui officia deserunt mollit anim id est
+                        laborum
+                        consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                    </p>
+                    <p style="line-height: 30px; color: #707070; font-size: 18px;font-weight: 500;">
+
+                        Sunt in culpa qui officia deserunt mollit anim id est
+                        laborum
+                        consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                        adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                        adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                        adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                        adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                        adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                        adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco.
+                    </p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="second_card">
+                    <div class="fakeimg" style="height:100px;">156 <br>DAYS</div>
+                    <div class="fakeimg" style="height:100px;">2 <br> HOURS </div>
+                    <div class="fakeimg" style="height:100px;">57 <br>MINUTE </div>
+                    <div class="fakeimg" style="height:100px;">53 <br>SECONDS </div>
+                </div>
+                <div class="third_card">
+                    <div class="fakeimg">Details</div>
+                    <div class="category">
+                        <p>Topic:</p>
+                        <a>Demo Zoom Event</a>
+                        <p>Hosted By:</p>
+                        <a>CM Author</a>
+                        <p>Start:</p>
+                        <a>Friday, February 10, 2023 5:00 PM</a>
+                        <p>Category:</p>
+                        <a>Virtual Event</a>
+                        <p>During:</p>
+                        <a>40 minutes</a>
+                        <p>Current Timezone:</p>
+                        <a>Asia/Kathmandu</a>
+                        <p>Topic:</p>
+                        <a>Demo Zoom Event</a>
+                    </div>
+                    <span>Google calender / ical export</span>
+                    <p>Note:Countdown time is shown based on your local timezone</p>
+                </div>
+                <div class="buttons">
+                    <button class="button">Join Meeting via Zoom App</button>
+                    <button class="button">Join via Web Browser</button>
+                </div>
+                <div class="buttons">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
